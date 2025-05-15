@@ -6,7 +6,7 @@
 /*   By: namichel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/03 23:13:50 by namichel          #+#    #+#             */
-/*   Updated: 2025/05/15 19:10:48 by lviravon         ###   ########.fr       */
+/*   Updated: 2025/05/15 22:12:13 by lviravon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,12 +86,12 @@ char				*parsing(t_inputs *inputs, char *line, char **envp);
 char				*space_pipe(char *line, int i);
 char				*space_redirec(char *line, int i, char c);
 int					ft_isspace(char c);
+void				free_2d(char **ptr);
 char				*varexp_envp(char **envp, char *line);
 void				new_token(char **split, int j, char *buffer, int len);
 char				**token_split(char *str);
 char				*space_char(char *line, int i, char c);
-char				*supressed_double_quote(char *line, int firPlace,
-						int secPlace);
+char				**supressed_double_quote(char **strs);
 
 int					ft_strcmp(char *s1, char *s2);
 t_cmd				*new_cmd(void);

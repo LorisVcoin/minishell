@@ -6,7 +6,7 @@
 /*   By: namichel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/13 06:36:28 by namichel          #+#    #+#             */
-/*   Updated: 2025/04/18 01:12:57 by lviravon         ###   ########.fr       */
+/*   Updated: 2025/05/15 22:37:19 by lviravon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,18 +95,26 @@ char	*parsing(t_inputs *inputs, char *line, char **envp)
 			c = line[i];
 			if (line[i] == '|')
 				line = space_pipe(line, tmp);
-			if(line[i] == '>' || line[i] == '<')
+			if (line[i] == '>' || line[i] == '<')
 				line = space_redirec(line, tmp, c);
 		}
 		i++;
 	}
-	line = varexp_envp(envp, line);
-	printf("%s\n", line);
-	//remplacer "$HOME" par sa valeur mais pas '$HOME'
+	line = varexp_envp(envp, line); // ! REVOIR LES FONCTION NE GERE PAS LES '$HOME'
+	int	z = 0;
 	split = token_split(line);
-	// ! RAPPEL SUPRIMER LES " et ' après le split
-	// print_tab(split);
+	while (split[z])
+	{
+		printf("%s\n", split[z]);
+		z++;
+	}
+	split = supressed_double_quote(split); // ! ne suprime pas bien les "" et les '' a revoir 
+	// z = 0;
+	// while (split[z])
+	// {
+		// printf("%s\n", split[z]);
+		// z++;
+	// }
 	set_cmd(inputs, split, envp);
-	//print_cmd(inputs);
 	return (line);
 }
