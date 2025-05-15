@@ -1,0 +1,866 @@
+[
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-g", "-I", "-includes", "-c", "main.c", "-o", "main.o"],
+	"file": "main.c",
+	"output": "main.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-g", "-I", "-includes", "-c", "free_utils.c", "-o", "free_utils.o"],
+	"file": "free_utils.c",
+	"output": "free_utils.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-g", "-I", "-includes", "-c", "echo.c", "-o", "echo.o"],
+	"file": "echo.c",
+	"output": "echo.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-g", "-I", "-includes", "-c", "env.c", "-o", "env.o"],
+	"file": "env.c",
+	"output": "env.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-g", "-I", "-includes", "-c", "export_the_void.c", "-o", "export_the_void.o"],
+	"file": "export_the_void.c",
+	"output": "export_the_void.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-g", "-I", "-includes", "-c", "exec.c", "-o", "exec.o"],
+	"file": "exec.c",
+	"output": "exec.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-g", "-I", "-includes", "-c", "duplicate_env.c", "-o", "duplicate_env.o"],
+	"file": "duplicate_env.c",
+	"output": "duplicate_env.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-g", "-I", "-includes", "-c", "token_split.c", "-o", "token_split.o"],
+	"file": "token_split.c",
+	"output": "token_split.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-g", "-I", "-includes", "-c", "set_cmd.c", "-o", "set_cmd.o"],
+	"file": "set_cmd.c",
+	"output": "set_cmd.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-g", "-I", "-includes", "-c", "parsing.c", "-o", "parsing.o"],
+	"file": "parsing.c",
+	"output": "parsing.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-g", "-I", "-includes", "-c", "pipe_gestion.c", "-o", "pipe_gestion.o"],
+	"file": "pipe_gestion.c",
+	"output": "pipe_gestion.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-g", "-I", "-includes", "-c", "quote_gestion.c", "-o", "quote_gestion.o"],
+	"file": "quote_gestion.c",
+	"output": "quote_gestion.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-g", "-I", "-includes", "-c", "redirec_gestion.c", "-o", "redirec_gestion.o"],
+	"file": "redirec_gestion.c",
+	"output": "redirec_gestion.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-g", "-I", "-includes", "-c", "varexp_gestion.c", "-o", "varexp_gestion.o"],
+	"file": "varexp_gestion.c",
+	"output": "varexp_gestion.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-g", "-I", "-includes", "-c", "utils_parsing.c", "-o", "utils_parsing.o"],
+	"file": "utils_parsing.c",
+	"output": "utils_parsing.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_isalnum.o", "ft_isalnum.c"],
+	"file": "ft_isalnum.c",
+	"output": "ft_isalnum.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_isprint.o", "ft_isprint.c"],
+	"file": "ft_isprint.c",
+	"output": "ft_isprint.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_memcmp.o", "ft_memcmp.c"],
+	"file": "ft_memcmp.c",
+	"output": "ft_memcmp.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_putchar_fd.o", "ft_putchar_fd.c"],
+	"file": "ft_putchar_fd.c",
+	"output": "ft_putchar_fd.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_split.o", "ft_split.c"],
+	"file": "ft_split.c",
+	"output": "ft_split.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_strlcat.o", "ft_strlcat.c"],
+	"file": "ft_strlcat.c",
+	"output": "ft_strlcat.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_strncmp.o", "ft_strncmp.c"],
+	"file": "ft_strncmp.c",
+	"output": "ft_strncmp.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_substr.o", "ft_substr.c"],
+	"file": "ft_substr.c",
+	"output": "ft_substr.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_atoi.o", "ft_atoi.c"],
+	"file": "ft_atoi.c",
+	"output": "ft_atoi.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_isalpha.o", "ft_isalpha.c"],
+	"file": "ft_isalpha.c",
+	"output": "ft_isalpha.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_itoa.o", "ft_itoa.c"],
+	"file": "ft_itoa.c",
+	"output": "ft_itoa.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_memcpy.o", "ft_memcpy.c"],
+	"file": "ft_memcpy.c",
+	"output": "ft_memcpy.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_putendl_fd.o", "ft_putendl_fd.c"],
+	"file": "ft_putendl_fd.c",
+	"output": "ft_putendl_fd.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_strchr.o", "ft_strchr.c"],
+	"file": "ft_strchr.c",
+	"output": "ft_strchr.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_strlcpy.o", "ft_strlcpy.c"],
+	"file": "ft_strlcpy.c",
+	"output": "ft_strlcpy.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_strnstr.o", "ft_strnstr.c"],
+	"file": "ft_strnstr.c",
+	"output": "ft_strnstr.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_tolower.o", "ft_tolower.c"],
+	"file": "ft_tolower.c",
+	"output": "ft_tolower.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_bzero.o", "ft_bzero.c"],
+	"file": "ft_bzero.c",
+	"output": "ft_bzero.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_isascii.o", "ft_isascii.c"],
+	"file": "ft_isascii.c",
+	"output": "ft_isascii.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_memmove.o", "ft_memmove.c"],
+	"file": "ft_memmove.c",
+	"output": "ft_memmove.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_putnbr_fd.o", "ft_putnbr_fd.c"],
+	"file": "ft_putnbr_fd.c",
+	"output": "ft_putnbr_fd.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_strdup.o", "ft_strdup.c"],
+	"file": "ft_strdup.c",
+	"output": "ft_strdup.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_strlen.o", "ft_strlen.c"],
+	"file": "ft_strlen.c",
+	"output": "ft_strlen.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_strrchr.o", "ft_strrchr.c"],
+	"file": "ft_strrchr.c",
+	"output": "ft_strrchr.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_toupper.o", "ft_toupper.c"],
+	"file": "ft_toupper.c",
+	"output": "ft_toupper.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_calloc.o", "ft_calloc.c"],
+	"file": "ft_calloc.c",
+	"output": "ft_calloc.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_isdigit.o", "ft_isdigit.c"],
+	"file": "ft_isdigit.c",
+	"output": "ft_isdigit.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_memchr.o", "ft_memchr.c"],
+	"file": "ft_memchr.c",
+	"output": "ft_memchr.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_memset.o", "ft_memset.c"],
+	"file": "ft_memset.c",
+	"output": "ft_memset.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_putstr_fd.o", "ft_putstr_fd.c"],
+	"file": "ft_putstr_fd.c",
+	"output": "ft_putstr_fd.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_strjoin.o", "ft_strjoin.c"],
+	"file": "ft_strjoin.c",
+	"output": "ft_strjoin.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_strmapi.o", "ft_strmapi.c"],
+	"file": "ft_strmapi.c",
+	"output": "ft_strmapi.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_strtrim.o", "ft_strtrim.c"],
+	"file": "ft_strtrim.c",
+	"output": "ft_strtrim.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_striteri.o", "ft_striteri.c"],
+	"file": "ft_striteri.c",
+	"output": "ft_striteri.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "pf_hexa.o", "pf_hexa.c"],
+	"file": "pf_hexa.c",
+	"output": "pf_hexa.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "pf_memcpy.o", "pf_memcpy.c"],
+	"file": "pf_memcpy.c",
+	"output": "pf_memcpy.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "pf_putstr.o", "pf_putstr.c"],
+	"file": "pf_putstr.c",
+	"output": "pf_putstr.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "pf_substr.o", "pf_substr.c"],
+	"file": "pf_substr.c",
+	"output": "pf_substr.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "pf_hexa_p.o", "pf_hexa_p.c"],
+	"file": "pf_hexa_p.c",
+	"output": "pf_hexa_p.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "pf_putchar.o", "pf_putchar.c"],
+	"file": "pf_putchar.c",
+	"output": "pf_putchar.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "pf_strchr.o", "pf_strchr.c"],
+	"file": "pf_strchr.c",
+	"output": "pf_strchr.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_printf.o", "ft_printf.c"],
+	"file": "ft_printf.c",
+	"output": "ft_printf.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "pf_itoa.o", "pf_itoa.c"],
+	"file": "pf_itoa.c",
+	"output": "pf_itoa.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "pf_putchar_fd.o", "pf_putchar_fd.c"],
+	"file": "pf_putchar_fd.c",
+	"output": "pf_putchar_fd.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "pf_strdup.o", "pf_strdup.c"],
+	"file": "pf_strdup.c",
+	"output": "pf_strdup.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "pf_itoa_u.o", "pf_itoa_u.c"],
+	"file": "pf_itoa_u.c",
+	"output": "pf_itoa_u.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "pf_putpercent.o", "pf_putpercent.c"],
+	"file": "pf_putpercent.c",
+	"output": "pf_putpercent.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "pf_strlen.o", "pf_strlen.c"],
+	"file": "pf_strlen.c",
+	"output": "pf_strlen.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_lstadd_back.o", "ft_lstadd_back.c"],
+	"file": "ft_lstadd_back.c",
+	"output": "ft_lstadd_back.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_lstadd_front.o", "ft_lstadd_front.c"],
+	"file": "ft_lstadd_front.c",
+	"output": "ft_lstadd_front.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_lstclear.o", "ft_lstclear.c"],
+	"file": "ft_lstclear.c",
+	"output": "ft_lstclear.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_lstdelone.o", "ft_lstdelone.c"],
+	"file": "ft_lstdelone.c",
+	"output": "ft_lstdelone.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_lstiter.o", "ft_lstiter.c"],
+	"file": "ft_lstiter.c",
+	"output": "ft_lstiter.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_lstlast.o", "ft_lstlast.c"],
+	"file": "ft_lstlast.c",
+	"output": "ft_lstlast.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_lstmap.o", "ft_lstmap.c"],
+	"file": "ft_lstmap.c",
+	"output": "ft_lstmap.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_lstnew.o", "ft_lstnew.c"],
+	"file": "ft_lstnew.c",
+	"output": "ft_lstnew.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_lstsize.o", "ft_lstsize.c"],
+	"file": "ft_lstsize.c",
+	"output": "ft_lstsize.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-g", "-I", "-includes", "-c", "main.c", "-o", "main.o"],
+	"file": "main.c",
+	"output": "main.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-g", "-I", "-includes", "-c", "free_utils.c", "-o", "free_utils.o"],
+	"file": "free_utils.c",
+	"output": "free_utils.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-g", "-I", "-includes", "-c", "echo.c", "-o", "echo.o"],
+	"file": "echo.c",
+	"output": "echo.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-g", "-I", "-includes", "-c", "env.c", "-o", "env.o"],
+	"file": "env.c",
+	"output": "env.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-g", "-I", "-includes", "-c", "export_the_void.c", "-o", "export_the_void.o"],
+	"file": "export_the_void.c",
+	"output": "export_the_void.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-g", "-I", "-includes", "-c", "exec.c", "-o", "exec.o"],
+	"file": "exec.c",
+	"output": "exec.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-g", "-I", "-includes", "-c", "duplicate_env.c", "-o", "duplicate_env.o"],
+	"file": "duplicate_env.c",
+	"output": "duplicate_env.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-g", "-I", "-includes", "-c", "token_split.c", "-o", "token_split.o"],
+	"file": "token_split.c",
+	"output": "token_split.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-g", "-I", "-includes", "-c", "set_cmd.c", "-o", "set_cmd.o"],
+	"file": "set_cmd.c",
+	"output": "set_cmd.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-g", "-I", "-includes", "-c", "parsing.c", "-o", "parsing.o"],
+	"file": "parsing.c",
+	"output": "parsing.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-g", "-I", "-includes", "-c", "pipe_gestion.c", "-o", "pipe_gestion.o"],
+	"file": "pipe_gestion.c",
+	"output": "pipe_gestion.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-g", "-I", "-includes", "-c", "quote_gestion.c", "-o", "quote_gestion.o"],
+	"file": "quote_gestion.c",
+	"output": "quote_gestion.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-g", "-I", "-includes", "-c", "redirec_gestion.c", "-o", "redirec_gestion.o"],
+	"file": "redirec_gestion.c",
+	"output": "redirec_gestion.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-g", "-I", "-includes", "-c", "varexp_gestion.c", "-o", "varexp_gestion.o"],
+	"file": "varexp_gestion.c",
+	"output": "varexp_gestion.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-g", "-I", "-includes", "-c", "utils_parsing.c", "-o", "utils_parsing.o"],
+	"file": "utils_parsing.c",
+	"output": "utils_parsing.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_isalnum.o", "ft_isalnum.c"],
+	"file": "ft_isalnum.c",
+	"output": "ft_isalnum.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_isprint.o", "ft_isprint.c"],
+	"file": "ft_isprint.c",
+	"output": "ft_isprint.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_memcmp.o", "ft_memcmp.c"],
+	"file": "ft_memcmp.c",
+	"output": "ft_memcmp.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_putchar_fd.o", "ft_putchar_fd.c"],
+	"file": "ft_putchar_fd.c",
+	"output": "ft_putchar_fd.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_split.o", "ft_split.c"],
+	"file": "ft_split.c",
+	"output": "ft_split.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_strlcat.o", "ft_strlcat.c"],
+	"file": "ft_strlcat.c",
+	"output": "ft_strlcat.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_strncmp.o", "ft_strncmp.c"],
+	"file": "ft_strncmp.c",
+	"output": "ft_strncmp.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_substr.o", "ft_substr.c"],
+	"file": "ft_substr.c",
+	"output": "ft_substr.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_atoi.o", "ft_atoi.c"],
+	"file": "ft_atoi.c",
+	"output": "ft_atoi.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_isalpha.o", "ft_isalpha.c"],
+	"file": "ft_isalpha.c",
+	"output": "ft_isalpha.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_itoa.o", "ft_itoa.c"],
+	"file": "ft_itoa.c",
+	"output": "ft_itoa.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_memcpy.o", "ft_memcpy.c"],
+	"file": "ft_memcpy.c",
+	"output": "ft_memcpy.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_putendl_fd.o", "ft_putendl_fd.c"],
+	"file": "ft_putendl_fd.c",
+	"output": "ft_putendl_fd.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_strchr.o", "ft_strchr.c"],
+	"file": "ft_strchr.c",
+	"output": "ft_strchr.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_strlcpy.o", "ft_strlcpy.c"],
+	"file": "ft_strlcpy.c",
+	"output": "ft_strlcpy.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_strnstr.o", "ft_strnstr.c"],
+	"file": "ft_strnstr.c",
+	"output": "ft_strnstr.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_tolower.o", "ft_tolower.c"],
+	"file": "ft_tolower.c",
+	"output": "ft_tolower.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_bzero.o", "ft_bzero.c"],
+	"file": "ft_bzero.c",
+	"output": "ft_bzero.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_isascii.o", "ft_isascii.c"],
+	"file": "ft_isascii.c",
+	"output": "ft_isascii.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_memmove.o", "ft_memmove.c"],
+	"file": "ft_memmove.c",
+	"output": "ft_memmove.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_putnbr_fd.o", "ft_putnbr_fd.c"],
+	"file": "ft_putnbr_fd.c",
+	"output": "ft_putnbr_fd.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_strdup.o", "ft_strdup.c"],
+	"file": "ft_strdup.c",
+	"output": "ft_strdup.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_strlen.o", "ft_strlen.c"],
+	"file": "ft_strlen.c",
+	"output": "ft_strlen.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_strrchr.o", "ft_strrchr.c"],
+	"file": "ft_strrchr.c",
+	"output": "ft_strrchr.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_toupper.o", "ft_toupper.c"],
+	"file": "ft_toupper.c",
+	"output": "ft_toupper.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_calloc.o", "ft_calloc.c"],
+	"file": "ft_calloc.c",
+	"output": "ft_calloc.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_isdigit.o", "ft_isdigit.c"],
+	"file": "ft_isdigit.c",
+	"output": "ft_isdigit.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_memchr.o", "ft_memchr.c"],
+	"file": "ft_memchr.c",
+	"output": "ft_memchr.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_memset.o", "ft_memset.c"],
+	"file": "ft_memset.c",
+	"output": "ft_memset.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_putstr_fd.o", "ft_putstr_fd.c"],
+	"file": "ft_putstr_fd.c",
+	"output": "ft_putstr_fd.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_strjoin.o", "ft_strjoin.c"],
+	"file": "ft_strjoin.c",
+	"output": "ft_strjoin.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_strmapi.o", "ft_strmapi.c"],
+	"file": "ft_strmapi.c",
+	"output": "ft_strmapi.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_strtrim.o", "ft_strtrim.c"],
+	"file": "ft_strtrim.c",
+	"output": "ft_strtrim.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_striteri.o", "ft_striteri.c"],
+	"file": "ft_striteri.c",
+	"output": "ft_striteri.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "pf_hexa.o", "pf_hexa.c"],
+	"file": "pf_hexa.c",
+	"output": "pf_hexa.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "pf_memcpy.o", "pf_memcpy.c"],
+	"file": "pf_memcpy.c",
+	"output": "pf_memcpy.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "pf_putstr.o", "pf_putstr.c"],
+	"file": "pf_putstr.c",
+	"output": "pf_putstr.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "pf_substr.o", "pf_substr.c"],
+	"file": "pf_substr.c",
+	"output": "pf_substr.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "pf_hexa_p.o", "pf_hexa_p.c"],
+	"file": "pf_hexa_p.c",
+	"output": "pf_hexa_p.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "pf_putchar.o", "pf_putchar.c"],
+	"file": "pf_putchar.c",
+	"output": "pf_putchar.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "pf_strchr.o", "pf_strchr.c"],
+	"file": "pf_strchr.c",
+	"output": "pf_strchr.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_printf.o", "ft_printf.c"],
+	"file": "ft_printf.c",
+	"output": "ft_printf.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "pf_itoa.o", "pf_itoa.c"],
+	"file": "pf_itoa.c",
+	"output": "pf_itoa.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "pf_putchar_fd.o", "pf_putchar_fd.c"],
+	"file": "pf_putchar_fd.c",
+	"output": "pf_putchar_fd.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "pf_strdup.o", "pf_strdup.c"],
+	"file": "pf_strdup.c",
+	"output": "pf_strdup.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "pf_itoa_u.o", "pf_itoa_u.c"],
+	"file": "pf_itoa_u.c",
+	"output": "pf_itoa_u.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "pf_putpercent.o", "pf_putpercent.c"],
+	"file": "pf_putpercent.c",
+	"output": "pf_putpercent.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "pf_strlen.o", "pf_strlen.c"],
+	"file": "pf_strlen.c",
+	"output": "pf_strlen.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_lstadd_back.o", "ft_lstadd_back.c"],
+	"file": "ft_lstadd_back.c",
+	"output": "ft_lstadd_back.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_lstadd_front.o", "ft_lstadd_front.c"],
+	"file": "ft_lstadd_front.c",
+	"output": "ft_lstadd_front.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_lstclear.o", "ft_lstclear.c"],
+	"file": "ft_lstclear.c",
+	"output": "ft_lstclear.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_lstdelone.o", "ft_lstdelone.c"],
+	"file": "ft_lstdelone.c",
+	"output": "ft_lstdelone.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_lstiter.o", "ft_lstiter.c"],
+	"file": "ft_lstiter.c",
+	"output": "ft_lstiter.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_lstlast.o", "ft_lstlast.c"],
+	"file": "ft_lstlast.c",
+	"output": "ft_lstlast.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_lstmap.o", "ft_lstmap.c"],
+	"file": "ft_lstmap.c",
+	"output": "ft_lstmap.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_lstnew.o", "ft_lstnew.c"],
+	"file": "ft_lstnew.c",
+	"output": "ft_lstnew.o"
+},
+{
+	"directory": "/nfs/homes/lviravon/Documents/ThirdCircle/minimini",
+	"arguments": ["gcc", "-Wall", "-Wextra", "-Werror", "-c", "-o", "ft_lstsize.o", "ft_lstsize.c"],
+	"file": "ft_lstsize.c",
+	"output": "ft_lstsize.o"
+}
+]
