@@ -6,7 +6,7 @@
 #    By: namichel <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/13 22:00:56 by namichel          #+#    #+#              #
-#    Updated: 2025/03/05 03:23:35 by namichel         ###   ########.fr        #
+#    Updated: 2025/05/18 06:18:18 by namichel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,6 +31,8 @@ SRCS		:=	ft_isalnum.c ft_isprint.c ft_memcmp.c  ft_putchar_fd.c ft_split.c \
 					pf_itoa_u.c \
 					pf_putpercent.c \
 					pf_strlen.c \
+					get_next_line.c \
+					get_next_line_utils.c
 
 OBJS		:=	$(SRCS:.c=.o)
 

@@ -1,46 +1,49 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   echo.c                                             :+:      :+:    :+:   */
+/*   pwd.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: namichel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/17 06:37:53 by namichel          #+#    #+#             */
-/*   Updated: 2025/06/04 17:49:52 by namichel         ###   ########.fr       */
+/*   Created: 2025/05/16 06:04:36 by namichel          #+#    #+#             */
+/*   Updated: 2025/05/27 18:41:02 by namichel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minishell.h"
+#include <errno.h>
+#include <unistd.h>
 
-void	echo_cmd(char **command)
+char	*getpwd(void)
 {
-	int	i;
+	char			*pwd;
+	int				errno;
+	unsigned int	i;
 
-	i = 0;
-	while (command[++i])
+	pwd = malloc(64);
+	if (pwd == 0)
+		return (0);
+	getcwd(pwd, 64);
+	i = 2;
+	while (errno == ERANGE)
 	{
-		ft_putstr_fd(command[i], 1);
-		if (command[i + 1] != NULL)
-			write(1, " ", 1);
+		free(pwd);
+		errno = 0;
+		pwd = malloc(64 * i);
+		if (pwd == 0)
+			return (0);
+		getcwd(pwd, 64 * i);
+		i++;
 	}
+	return (pwd);
 }
 
-int	echo(t_cmd *command)
+int	pwd(void)
 {
-	if (command->arg[1] != 0)
-	{
-		if (ft_strcmp(command->arg[1], "-n") != 0)
-			echo_cmd(&(command->arg[1]));
-		else
-		{
-			echo_cmd(&(command->arg[0]));
-			write(1, "\n", 1);
-		}
-	}
-	else
-	{
-		write(1, "\n", 1);
-		return (EXIT_SUCCESS);
-	}
-	return (EXIT_SUCCESS);
+	char	*pwd;
+
+	pwd = getpwd();
+	printf("%s\n", pwd);
+	free(pwd);
+	return (0);
 }

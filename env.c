@@ -6,7 +6,7 @@
 /*   By: namichel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/17 07:36:05 by namichel          #+#    #+#             */
-/*   Updated: 2025/04/17 07:42:33 by namichel         ###   ########.fr       */
+/*   Updated: 2025/05/27 19:45:01 by namichel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,14 +25,15 @@ int	where_is_equal(char *envp)
 	return (0);
 }
 
-void	env(char **envp)
+int	env(char **envp)
 {
 	if (envp == 0)
-		return ;
+		exit (EXIT_FAILURE);
 	while (*envp)
 	{
 		if (where_is_equal(*envp))
-			printf(YELLOW "%s\n" RESET, *envp);
+			printf("%s\n", *envp);
 		envp++;
 	}
+	return (0);
 }

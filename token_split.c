@@ -6,41 +6,153 @@
 /*   By: namichel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/13 07:20:21 by namichel          #+#    #+#             */
-/*   Updated: 2025/05/15 19:41:49 by lviravon         ###   ########.fr       */
+/*   Updated: 2025/06/04 18:09:34 by namichel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minishell.h"
-#include <libft/libft.h>
 
-// #define MAX_TOKEN 128
-// #define BUFFER_SIZE 4096
-
-static unsigned int	count_token(char *s)
+static void	init_token(t_token *t)
 {
-	unsigned int	i;
-	unsigned int	count_str;
-	unsigned int	j;
+	t->len = 0;
+	t->td = 0;
+	t->tmp = 0;
+	t->type = 0;
+}
+
+static char	*cpy_str(char *s, t_token *t, int *i)
+{
+	char	*res;
+	int		next;
+
+	res = malloc(t->len - t->td + 1);
+	if (!res)
+		return (0);
+	res[t->len - t->td] = 0;
+	next = 0;
+	while (t->len-- - t->td)
+	{
+		if (s[*i + t->len - next] == '\"' && (t->type == 0 || t->type == 2))
+			t->type = (t->type + 2) % 4;
+		if (s[*i + t->len - next] == '\'' && (t->type == 0 || t->type == 1))
+			t->type = (t->type + 1) % 2;
+		res[t->len - t->td] = s[*i + t->len - next];
+	}
+	return (res);
+}
+
+static char	*split_str(char *s, int *i)
+{
+	t_token	t;
+	char	*res;
+
+	if (!s)
+		return (0);
+	init_token(&t);
+	while (s[*i + t.len] && (s[*i + t.len] != ' ' || t.type))
+	{
+		if (s[*i + t.len] == '\"' && (t.type == 0 || t.type == 2))
+			t.type = (t.type + 2) % 4;
+		if (s[*i + t.len] == '\'' && (t.type == 0 || t.type == 1))
+			t.type = (t.type + 1) % 2;
+		t.len++;
+	}
+	t.tmp = t.len;
+	res = cpy_str(s, &t, i);
+	*i += t.tmp;
+	return (res);
+}
+
+static int	count_helper(char *line, int *i)
+{
+	while (line[*i] && line[*i] == '\'' && line[++(*i)])
+	{
+		while (line[*i] != '\'')
+		{
+			if (line[*i] == '\0')
+				return (-1);
+			(*i)++;
+		}
+		(*i)++;
+	}
+	while (line[*i] && line[*i] == '\"' && line[++(*i)])
+	{
+		while (line[*i] != '\"')
+		{
+			if (line[*i] == '\0')
+				return (-1);
+			(*i)++;
+		}
+		(*i)++;
+	}
+	while (line[*i] && line[*i] != ' ' && line[*i] != '\'' && line[*i] != '\"')
+		(*i)++;
+	return (0);
+}
+
+static int	count(char *line)
+{
+	int	i;
+	int	arg;
 
 	i = 0;
-	j = 0;
-	count_str = 0;
-	while (s[i] != '\0')
+	arg = 0;
+	while (line[i])
 	{
-		if (ft_isspace(s[i]) && s[i + 1] != '\0' && ft_isspace(s[i + 1]) != 1)
-			count_str++;
-		i++;
+		if (line[i] == ' ')
+		{
+			while (line[i] == ' ')
+				i++;
+			if (line[i] == 0 && arg == 0)
+				return (-1);
+			if (line[i] == 0)
+				return (arg);
+		}
+		if (count_helper(line, &i) == -1)
+			return (-1);
+		if (line[i] == '\'' || line[i] == '\"')
+			arg--;
+		arg++;
 	}
-	i = 0;
-	while (s[i] != '\0')
-	{
-		if (ft_isspace(s[j]))
-			j++;
-		i++;
-	}
-	if (i == j)
+	return (arg);
+}
+
+char	**token_split(char *line)
+{
+	char	**res;
+	int		arg;
+	int		i;
+	int		tmp;
+
+	arg = count(line);
+	if (arg == -1)
 		return (0);
-	return (count_str + 1);
+	res = malloc(sizeof(char *) * (arg + 1));
+	if (!res)
+		return (0);
+	res[arg] = 0;
+	i = 0;
+	tmp = arg;
+	arg = 0;
+	while (arg < tmp)
+	{
+		while (line[i] == ' ')
+			i++;
+		res[arg] = split_str(line, &i);
+		arg++;
+	}
+	return (res);
+}
+
+/*
+#define MAX_TOKEN 128
+#define BUFFER_SIZE 4096
+
+int	ft_isspace(char c)
+{
+	if (c == ' ')
+		return (1);
+	return (0);
 }
 
 void	new_token(char **split, int j, char *buffer, int len)
@@ -52,65 +164,50 @@ void	new_token(char **split, int j, char *buffer, int len)
 	}
 }
 
-static t_splitter	init_s(char *str)
-{
-	t_splitter	init;
-	int			size_strs;
-	int			buffer_size;
-
-	buffer_size = ft_strlen(str);
-	size_strs = count_token(str);
-	init.split = (char **)malloc(sizeof(char *) * size_strs + 1);
-	init.i = 0;
-	init.j = 0;
-	init.buffer = malloc(sizeof(char) * buffer_size);
-	init.quote = 0;
-	init.token_index = 0;
-	return (init);
-}
-
-static t_splitter	splitting(t_splitter split, char *str)
-{
-	if (str[split.i] == '\'' || str[split.i] == '"')
-	{
-		split.quote = str[split.i];
-		split.buffer[split.j++] = str[split.i];
-	}
-	else if (str[split.i] == split.quote)
-	{
-		split.quote = 0;
-		split.buffer[split.j++] = str[split.i];
-	}
-	else if (ft_isspace(str[split.i]) && split.quote == 0)
-	{
-		if (split.j > 0)
-			new_token(split.split, split.token_index, split.buffer, split.j);
-		split.j = 0;
-		split.token_index++;
-	}
-	else
-		split.buffer[split.j++] = str[split.i];
-	split.i++;
-	return (split);
-}
-
 char	**token_split(char *str)
 {
-	t_splitter	split;
+	char	**split;
+	int		i;
+	int		j;
+	char	buf[BUFFER_SIZE];
+	char	quote;
+	int		index_token;
 
-	split = init_s(str);
-	if (!split.split || !split.buffer)
+	index_token = 0;
+	quote = 0;
+	i = 0;
+	j = 0;
+	split = (char **)malloc(sizeof(char *) * MAX_TOKEN);
+	if (!split)
 		return (NULL);
-	while (str[split.i])
+	while (str[i] != '\0')
 	{
-		split = splitting(split, str);
+		if ((str[i] == '\'' || str[i] == '"') && quote == 0)
+		{
+			quote = str[i];
+			buf[j++] = str[i];
+		}
+		else if (str[i] == quote)
+		{
+			quote = 0;
+			buf[j++] = str[i];
+		}
+		else if (ft_isspace(str[i]) && quote == 0)
+		{
+			if (j > 0)
+				new_token(split, index_token, buf, j);
+			j = 0;
+			index_token++;
+		}
+		else
+			buf[j++] = str[i];
+		i++;
 	}
-	if (split.j > 0)
+	if (j > 0)
 	{
-		new_token(split.split, split.token_index, split.buffer, split.j);
-		split.token_index++;
+		new_token(split, index_token, buf, j);
+		index_token++; // FIX il manquait le index TOKEN
 	}
-	free(split.buffer);
-	split.split[split.token_index] = NULL;
-	return (split.split);
-}
+	split[index_token] = NULL;
+	return (split);
+}*/

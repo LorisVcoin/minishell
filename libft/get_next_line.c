@@ -6,13 +6,13 @@
 /*   By: namichel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 22:40:42 by namichel          #+#    #+#             */
-/*   Updated: 2024/10/21 02:41:34 by namichel         ###   ########.fr       */
+/*   Updated: 2025/05/18 06:20:54 by namichel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-void	*ft_memcpy(void *dst, const void *src, size_t n)
+void	*gl_memcpy(void *dst, const void *src, size_t n)
 {
 	size_t	i;
 

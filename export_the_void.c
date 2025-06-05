@@ -6,7 +6,7 @@
 /*   By: namichel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/17 07:55:25 by namichel          #+#    #+#             */
-/*   Updated: 2025/04/17 08:30:31 by namichel         ###   ########.fr       */
+/*   Updated: 2025/05/28 18:39:25 by namichel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "minishell.h"
@@ -68,13 +68,13 @@ char	**sort(char **table)
 	return (table);
 }
 
-void	export_nothing(char **envp)
+int	export_nothing(char **envp)
 {
 	char	**sort_table;
 	int		tmp;
 
 	if (!envp)
-		return ;
+		return (EXIT_FAILURE);
 	tmp = count_line(envp);
 	sort_table = malloc(sizeof(char *) * (tmp + 1));
 	if (!sort_table)
@@ -89,8 +89,9 @@ void	export_nothing(char **envp)
 	tmp = 0;
 	while (sort_table[tmp])
 	{
-		printf(MAGENTA "declare -x %s\n" RESET, sort_table[tmp]);
+		printf("declare -x %s\n", sort_table[tmp]);
 		tmp++;
 	}
 	free_tab(&sort_table);
+	return (EXIT_SUCCESS);
 }

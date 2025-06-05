@@ -6,12 +6,23 @@
 /*   By: namichel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/13 06:36:28 by namichel          #+#    #+#             */
-/*   Updated: 2025/05/15 22:37:19 by lviravon         ###   ########.fr       */
+/*   Updated: 2025/06/04 19:52:16 by namichel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minishell.h"
-#include <libft/libft.h>
+
+static int	ft_strcmmp(char *s1, char *s2)
+{
+	if (s1 == 0 || s2 == 0)
+		return (-1);
+	while (*s1 && *s2 && *s1 == *s2)
+	{
+		s1++;
+		s2++;
+	}
+	return (0);
+}
 
 void	print_cmd_arg(t_cmd *cmd)
 {
@@ -70,51 +81,150 @@ void	print_tab(char **tab)
 	free_tab(&tab);
 }
 
-char	*parsing(t_inputs *inputs, char *line, char **envp)
+static int	search(char *s, char c)
 {
-	char	**split;
-	char	c;
-	int		i;
-	int		tmp;
+	while (*s)
+	{
+		if (*s == c)
+			return (1);
+		s++;
+	}
+	return (0);
+}
+/*
+static int	is_redirections(char c)
+{
+	if (c == '>' || c == '<' || c == '|')
+		return (1);
+	return (0);
+}
+
+int	check_structure(t_cmd *cmd)
+{
+	int	i;
+
+	while (cmd)
+	{
+		if (cmd->arg)
+		{
+			i = 0;
+			if (is_redirections(cmd->arg[i][0]))
+				return (0);
+			i++;
+		}
+		cmd = cmd->next;
+	}
+	return (1);
+}
+*/
+
+char	**tab_syntax(char **tab)
+{
+	int	i;
 
 	i = 0;
-	(void)inputs;
-	while (line[i])
+	while (tab[i])
 	{
-		if (line[i] == '\'' || line[i] == '"')
+		if (ft_strcmp(tab[0], "|"))
 		{
-			c = line[i];
-			i++;
-			if (line[i] != c)
-				while (line[i] != c)
-					i++;
+			free_tab(&tab);
+			return (NULL);
 		}
-		if (line[i] == '|' || line[i] == '>' || line[i] == '<')
+		if ((is_redirections(tab[i]) || ft_strcmp(tab[i], "|")) && ft_strcmp(tab[i + 1], "|"))
 		{
-			tmp = i;
-			c = line[i];
-			if (line[i] == '|')
-				line = space_pipe(line, tmp);
-			if (line[i] == '>' || line[i] == '<')
-				line = space_redirec(line, tmp, c);
+			//printf("hi");
+			free_tab(&tab);
+			return (NULL);
 		}
 		i++;
 	}
-	line = varexp_envp(envp, line); // ! REVOIR LES FONCTION NE GERE PAS LES '$HOME'
-	int	z = 0;
-	split = token_split(line);
-	while (split[z])
+	if (is_redirections(tab[i - 1]) || ft_strcmp(tab[i - 1], "|"))
 	{
-		printf("%s\n", split[z]);
-		z++;
+		free_tab(&tab);
+		return (NULL);
 	}
-	split = supressed_double_quote(split); // ! ne suprime pas bien les "" et les '' a revoir 
-	// z = 0;
-	// while (split[z])
-	// {
-		// printf("%s\n", split[z]);
-		// z++;
-	// }
-	set_cmd(inputs, split, envp);
+	return (tab);
+}
+
+static char **skip_voidarg(char **split)
+{
+	int		i;
+	int		j;
+	char	**res;
+
+	j = 0;
+	i = 0;
+	res = ft_calloc(sizeof(char *) * (count_line(split)), 2);
+	while (split[i])
+	{
+		if (ft_strcmp(split[i], ""))
+		{
+			i++;
+			continue ;
+		}
+		res[j] = ft_strdup(split[i]);
+		j++;
+		i++;
+	}
+	free_tab(&split);
+	return (res);
+}
+
+#include <string.h>
+//#TODO Reste a faire "| | | ou | > -----> ? = 2"
+char	*parsing(t_inputs *inputs, char *line, char **envp)
+{
+	char	**split;
+	int		i;
+	int		bexpand;
+
+	bexpand = 0;
+	i = 0;
+	if (line[0] == 0)
+		return (0);
+	line = cut_space(line);
+	if (line)
+		line = exitval(line);
+	if (line)
+		line = space(line);
+	// printf("%s\n", line);
+	if (line)
+		if (line[0] == '|' || line[0] == '\n')
+			return (0);
+	if (!line)
+		return (0);
+	split = token_split(line);
+	// print_tab(split);
+	while (split[i])
+	{
+		if (ft_strcmmp(split[i], "<<") == 0 && search(split[i], '\''))
+		{
+			i++;
+			bexpand = -1;
+		}
+		if (bexpand != -1 && split[i] && search(split[i], '$'))
+			split[i] = expand(split[i], envp);
+		if (split[i])
+			i++;
+		bexpand = 0;
+	}
+	if (split)
+		split = tab_syntax(split);
+	if (split)
+		split = skip_voidarg(split);
+	// if (split)
+		// split = supre_quote(split);
+	if (split)
+		set_cmd(inputs, split, envp);
+	// inputs->term = line;
+	// print_cmd(inputs);
+	// if (!check_structure(inputs->cmds))
+		// return (0);
+	// printf("%s\n", inputs->cmds->cmd);
+	// if (!inputs->cmds->cmd)
+		// return (0);
+	if (!split)
+		free_string(&line);
 	return (line);
+
 }

@@ -6,7 +6,7 @@
 /*   By: namichel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/13 06:09:21 by namichel          #+#    #+#             */
-/*   Updated: 2025/04/17 05:53:10 by namichel         ###   ########.fr       */
+/*   Updated: 2025/05/30 22:39:22 by lviravon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,11 @@
 
 void	free_string(char **str)
 {
-	if (*str == 0)
-		return ;
-	free(*str);
-	*str = 0;
+	if (str || *str)
+	{
+		free(*str);
+		*str = NULL;
+	}
 }
 
 void	free_cmds(t_cmd *command)
@@ -26,14 +27,14 @@ void	free_cmds(t_cmd *command)
 	command->in.flag = 0;
 	free_string(&(command->out.file));
 	command->out.flag = 0;
+	command->in.file = 0;
 	free_string(&(command->in.eof));
-	if (command->next)
-	{
-		free_cmds(command->next);
-		free(command->next);
-	}
+	free_string(&(command->out.eof));
+	free_tab(&(command->arg));
 	free(command->cmd);
-	free_tab(&(command->arg));	
+	if (command->next)
+		free_cmds(command->next);
+	free(command);
 }
 
 void	free_inputs(t_inputs *inputs)
@@ -41,7 +42,6 @@ void	free_inputs(t_inputs *inputs)
 	if (inputs->cmds)
 	{
 		free_cmds(inputs->cmds);
-		free(inputs->cmds);
 		inputs->cmds = 0;
 	}
 }

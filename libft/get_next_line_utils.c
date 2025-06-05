@@ -6,13 +6,13 @@
 /*   By: namichel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 22:41:05 by namichel          #+#    #+#             */
-/*   Updated: 2024/10/21 01:29:53 by namichel         ###   ########.fr       */
+/*   Updated: 2025/05/18 06:20:08 by namichel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-char	*ft_substr(char const *s, unsigned int start, size_t len)
+char	*gl_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t	i;
 	size_t	len_s;
@@ -33,7 +33,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return (str);
 }
 
-size_t	ft_strlen(const char *theString)
+size_t	gl_strlen(const char *theString)
 {
 	size_t	index;
 
@@ -43,7 +43,7 @@ size_t	ft_strlen(const char *theString)
 	return (index);
 }
 
-char	*ft_strjoin(const char *s1, char const *s2)
+char	*gl_strjoin(const char *s1, char const *s2)
 {
 	int		i;
 	int		a;
@@ -67,7 +67,7 @@ char	*ft_strjoin(const char *s1, char const *s2)
 	return (ptr);
 }
 
-char	*ft_strdup(const char *source)
+char	*gl_strdup(const char *source)
 {
 	char	*result;
 	size_t	len;
@@ -80,7 +80,7 @@ char	*ft_strdup(const char *source)
 	return (result);
 }
 
-char	*ft_strchr(const char *s, int c)
+char	*gl_strchr(const char *s, int c)
 {
 	int	i;
 
